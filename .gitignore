@@ -1,1 +1,7 @@
-env
+.env
+env/
+__pycache__/
+*.pyc
+chroma_db/
+figures/
+.pytest_cache/

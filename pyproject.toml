@@ -23,6 +23,7 @@ unstructured = {extras = ["all-docs"], version = "^0.16.0"}
 pytesseract = "^0.3.13"
 chromadb = "^0.5.0"
 uuid = "^1.30"
+python-magic-bin = "^0.4.14"
 
 [build-system]
 requires = ["poetry-core"]
