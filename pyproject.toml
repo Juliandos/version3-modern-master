@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "multimodal-rag-modern"
+version = "1.0.0"
+description = "Modern Multi-Modal RAG with LangChain v0.3+ and Python 3.13"
+authors = ["julio4ai <juliocolomer@gmail.com>"]
+readme = "README.md"
+packages = [{include = "multimodal_rag"}]
+
+[tool.poetry.dependencies]
+python = "^3.13.3"
+jupyterlab = "^4.2.4"
+langchain = "^0.3.0"
+langchain-openai = "^0.2.0"
+langchain-community = "^0.3.0"
+langchain-core = "^0.3.0"
+langchain-chroma = "^0.1.4"
+python-dotenv = "^1.0.1"
+openai = "^1.50.0"
+pydantic = "^2.9.0"
+lxml = "^5.3.0"
+tiktoken = "^0.8.0"
+unstructured = {extras = ["all-docs"], version = "^0.16.0"}
+pytesseract = "^0.3.13"
+chromadb = "^0.5.0"
+uuid = "^1.30"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+run-multimodal = "multimodal_rag.main:main"
